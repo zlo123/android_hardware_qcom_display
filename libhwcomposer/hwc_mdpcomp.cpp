@@ -723,7 +723,7 @@ int MDPComp::draw(hwc_context_t *ctx, hwc_display_contents_1_t* list) {
             dest = ovutils::OV_PIPE0;
         } else if (index == 1) {
             dest = ovutils::OV_PIPE1;
-        } else if (index == 2) {
+        } else {
             dest = ovutils::OV_PIPE2;
         }
 
