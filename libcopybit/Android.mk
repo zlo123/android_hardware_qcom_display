@@ -22,6 +22,7 @@ LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
 LOCAL_SHARED_LIBRARIES        := $(common_libs) libdl libmemalloc
 LOCAL_CFLAGS                  := $(common_flags)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
+common_flags += -Werror
 
 
 ifeq ($(TARGET_USES_C2D_COMPOSITION),true)
